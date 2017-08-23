@@ -1,0 +1,61 @@
+{
+	"SX1301_conf": {
+		"chan_multiSF_0": {
+			"enable": true,
+			"radio": 0,
+			"freq": 433.3 			// MHz
+		},
+		"chan_multiSF_1": {
+			"enable": true,
+			"radio": 0,
+			"freq": 433.5
+		},
+		"chan_multiSF_2": {
+			"enable": true,
+			"radio": 0,
+			"freq": 433.7
+		},
+		"chan_multiSF_3": {
+			"enable": true,
+			"radio": 0,
+			"freq": 433.9
+		},
+		"chan_multiSF_4": {
+			"enable": true,
+			"radio": 1,
+			"freq": 434.1
+		},
+		"chan_multiSF_5": {
+			"enable": true,
+			"radio": 1,
+			"freq": 434.3
+		},
+		"chan_multiSF_6": {
+			"enable": true,
+			"radio": 1,
+			"freq": 434.5
+		},
+		"chan_multiSF_7": {
+			"enable": true,
+			"radio": 1,
+			"freq": 434.7
+		},
+		"chan_Lora_std": {
+			"enable": false,
+			"radio": 0,
+			"freq": 434.5,
+			"bandwidth": 250000,
+			"spread_factor": 7
+		},
+		"chan_FSK": {
+			"enable": false,
+			"radio": 0,
+			"freq": 434.5,
+			"bandwidth": 250000,
+			"datarate": 100000
+		}
+	},
+	"loramac": true,
+	"rssi_offset": -176,
+	"rx_bandwidth_max": 1000000
+}

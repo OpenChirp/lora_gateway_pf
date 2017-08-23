@@ -1,0 +1,16 @@
+[Unit]
+Description=packet forwarder
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Restart=always
+RestartSec=5
+WorkingDirectory=/home/rxhf/risinghf/pktfwd/
+ExecStartPre=/usr/local/sbin/gwrst
+ExecStartPre=/home/rxhf/risinghf/pktfwd/update_gwid.sh /home/rxhf/risinghf/pktfwd/local_conf.json
+ExecStart=/home/rxhf/risinghf/pktfwd/pktfwd
+ExecStopPost=/usr/local/sbin/gwrst
+
+[Install]
+WantedBy=multi-user.target
