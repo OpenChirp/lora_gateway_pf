@@ -17,6 +17,13 @@ make package
 make package-deb
 ```
 
+Install package
+```
+cd dist/deb/
+sudo dpkg -i lora-gateway-rhf0m301_*_armhf.deb
+```
+
+
 ## Current Software Versions
 * [lora_gateway](https://github.com/Lora-net/lora_gateway): v5.0.1
 * [packet_forwarder](https://github.com/Lora-net/packet_forwarder): v4.0.1 - 2017-03-16
