@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NAME=lora-gateway-RHF0M301
+NAME=lora-gateway-pf-RHF0M301
 BIN_DIR=/opt/$NAME
 SCRIPT_DIR=/opt/$NAME/scripts
 CONFIG_DIR=/etc/$NAME

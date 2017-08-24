@@ -10,7 +10,7 @@ case $TARGET in
 		;;
 esac
 
-NAME=lora-gateway-RHF0M301
+NAME=lora-gateway-pf-RHF0M301
 BIN_DIR=/opt/$NAME
 SCRIPT_DIR=/opt/$NAME/scripts
 CONFIG_DIR=/etc/$NAME
@@ -23,7 +23,7 @@ POSTUNINSTALL_SCRIPT=$TARGET/post-uninstall.sh
 
 LICENSE=MIT
 VERSION=`git describe --always`
-URL=https://github.com/OpenChirp/lora_gateway_RHF0M301/
+URL=https://github.com/OpenChirp/lora_gateway_pf_RHF0M301/
 MAINTAINER=info@openchirp.io
 VENDOR="OpenChirp.io"
 DESCRIPTION=" LoRa Gateway Packet Forwarder RHF0M301 forwards the packets captured on the radio interface to a UDP port"
@@ -72,7 +72,7 @@ if [ -n "$DEB_WANTED" ]; then
 	fi
 	mkdir -p ../dist/deb
 	mv *.deb ../dist/deb
-	echo "Debian package created successfully at " ../dist/deb/*.deb
+	echo "Debian package created successfully at dist/deb/
 fi
 
 # remove temporary dirs

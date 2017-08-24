@@ -1,6 +1,6 @@
 .PHONY: clean
 VERSION := $(shell git describe --always)
-NAME := "lora-gateway-RHF0M301"
+NAME := "lora-gateway-pf-RHF0M301"
 
 clean:
 	rm -rf build
@@ -44,4 +44,6 @@ package: build
 	@rm -rf dist/tar/$(VERSION)
 
 package-deb: package
+	@echo "Creating DEB installer"
+	@chmod +x packaging/package.sh
 	@cd packaging && TARGET=deb ./package.sh
