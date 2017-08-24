@@ -4,7 +4,7 @@
 ```
 # Clone Repo and submodules
 git clone git@github.com:OpenChirp/lora_gateway_pf_RHF0M301.git
-cd lora_gateway_RHF0M301
+cd lora_gateway_pf_RHF0M301
 git submodule update --recursive --init
 
 # Compile
