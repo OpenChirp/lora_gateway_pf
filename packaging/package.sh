@@ -72,7 +72,7 @@ if [ -n "$DEB_WANTED" ]; then
 	fi
 	mkdir -p ../dist/deb
 	mv *.deb ../dist/deb
-	echo "Debian package created successfully at dist/deb/
+	echo "Debian package created successfully at dist/deb/"
 fi
 
 # remove temporary dirs
