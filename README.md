@@ -1,5 +1,8 @@
 # Lora Gateway RHF0M301 Packet Forwarder and Configuration files
 
+## Tested Hardware
+ * RHF0M301 LoRa Gateway Concentrator Module [[link1](http://www.risinghf.com/product/rhf0m301/?lang=en)] [[link2](https://www.seeedstudio.com/LoRa%2FLoRaWAN-Gateway-915MHz-for-Raspberry-Pi-3-p-2821.html)]
+
 ## Building from Source
 ```
 # Clone Repo and submodules
