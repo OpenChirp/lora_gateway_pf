@@ -1,5 +1,8 @@
 # Lora Gateway RHF0M301 Packet Forwarder and Configuration files
 
+## Tested Hardware
+ * [RHF0M301](http://www.risinghf.com/product/rhf0m301/?lang=en)
+
 ## Building from Source
 ```
 # Clone Repo and submodules
