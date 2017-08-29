@@ -10,8 +10,8 @@
 iot_sk_update_gwid() {
     # get gateway ID from its MAC address to generate an EUI-64 address
     GWID_MIDFIX="FFFE"
-    GWID_BEGIN=$(ip link show eth0 | awk '/ether/ {print $2}' | awk -F\: '{print $1$2$3}')
-    GWID_END=$(ip link show eth0 | awk '/ether/ {print $2}' | awk -F\: '{print $4$5$6}')
+    GWID_BEGIN=$(ip link show | awk '/ether/ {print $2}' | awk -F\: '{print $1$2$3}' | head -n 1)
+    GWID_END=$(ip link show | awk '/ether/ {print $2}' | awk -F\: '{print $4$5$6}' | head -n 1)
 
     # replace last 8 digits of default gateway ID by actual GWID, in given JSON configuration file
     sed -i 's/\(^\s*"gateway_ID":\s*"\).\{16\}"\s*\(,\?\).*$/\1'${GWID_BEGIN}${GWID_MIDFIX}${GWID_END}'"\2/' $1
