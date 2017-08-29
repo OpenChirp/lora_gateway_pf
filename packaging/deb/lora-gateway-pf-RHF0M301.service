@@ -8,6 +8,7 @@ User=root
 Group=root
 Restart=always
 RestartSec=250ms
+StartLimitBurst=0
 WorkingDirectory=/etc/lora-gateway-pf-RHF0M301
 ExecStartPre=/opt/lora-gateway-pf-RHF0M301/scripts/gwrst.sh
 ExecStartPre=/opt/lora-gateway-pf-RHF0M301/scripts/update_gwid.sh /etc/lora-gateway-pf-RHF0M301/local_conf.json
