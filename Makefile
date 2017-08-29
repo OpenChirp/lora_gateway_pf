@@ -1,5 +1,5 @@
 .PHONY: clean
-VERSION := $(shell git describe --always)
+VERSION := 0.$(shell git describe --always)
 NAME := "lora-gateway-pf-RHF0M301"
 
 clean:

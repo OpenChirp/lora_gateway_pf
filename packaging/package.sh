@@ -22,7 +22,7 @@ PREINSTALL_SCRIPT=$TARGET/pre-install.sh
 POSTUNINSTALL_SCRIPT=$TARGET/post-uninstall.sh
 
 LICENSE=MIT
-VERSION=`git describe --always`
+VERSION=0.`git describe --always`
 URL=https://github.com/OpenChirp/lora_gateway_pf_RHF0M301/
 MAINTAINER=info@openchirp.io
 VENDOR="OpenChirp.io"
