@@ -1,0 +1,19 @@
+[Unit]
+Description=packet forwarder
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Group=root
+Restart=always
+RestartSec=250ms
+StartLimitBurst=0
+WorkingDirectory=/etc/lora-gateway-pf
+ExecStartPre=/opt/lora-gateway-pf/scripts/gwrst.sh
+ExecStartPre=/opt/lora-gateway-pf/scripts/update_gwid.sh /etc/lora-gateway-pf/local_conf.json
+ExecStart=/opt/lora-gateway-pf/lora_pkt_fwd
+ExecStopPost=/opt/lora-gateway-pf/scripts/gwrst.sh
+
+[Install]
+WantedBy=multi-user.target

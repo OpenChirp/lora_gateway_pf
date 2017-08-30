@@ -10,7 +10,15 @@ case $TARGET in
 		;;
 esac
 
-NAME=lora-gateway-pf-RHF0M301
+# validate version
+if [ -z "$VERSION" ]
+then
+	VERSION=0`git describe --always`
+fi
+
+echo "Version is "$VERSION
+
+NAME=lora-gateway-pf
 BIN_DIR=/opt/$NAME
 SCRIPT_DIR=/opt/$NAME/scripts
 CONFIG_DIR=/etc/$NAME
@@ -22,11 +30,10 @@ PREINSTALL_SCRIPT=$TARGET/pre-install.sh
 POSTUNINSTALL_SCRIPT=$TARGET/post-uninstall.sh
 
 LICENSE=MIT
-VERSION=0.`git describe --always`
-URL=https://github.com/OpenChirp/lora_gateway_pf_RHF0M301/
+URL=https://github.com/OpenChirp/lora_gateway_pf/
 MAINTAINER=info@openchirp.io
 VENDOR="OpenChirp.io"
-DESCRIPTION=" LoRa Gateway Packet Forwarder RHF0M301 forwards the packets captured on the radio interface to a UDP port"
+DESCRIPTION=" LoRa Gateway Packet Forwarder - forwards the packets captured on the radio interface to a UDP port"
 DIST_FILE_PATH="../dist/tar/${NAME}_${VERSION}.tar.gz"
 DEB_FILE_PATH="../dist/deb"
 
