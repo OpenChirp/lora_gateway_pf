@@ -18,7 +18,7 @@ make build
 make package
 
 # build the .deb file (includes zone specific confguration files and startup script)
-make package-deb
+make package-deb VERSION=x.x.x
 ```
 
 Install package
