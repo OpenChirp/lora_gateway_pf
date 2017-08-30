@@ -7,8 +7,8 @@
 ## Building from Source
 ```
 # Clone Repo and submodules
-git clone git@github.com:OpenChirp/lora_gateway_pf_RHF0M301.git
-cd lora_gateway_pf_RHF0M301
+git clone git@github.com:OpenChirp/lora_gateway_pf.git
+cd lora_gateway_pf
 git submodule update --recursive --init
 
 # Compile
@@ -24,7 +24,7 @@ make package-deb
 Install package
 ```
 cd dist/deb/
-sudo dpkg -i lora-gateway-rhf0m301_*_armhf.deb
+sudo dpkg -i lora-gateway-pf-*_armhf.deb
 ```
 
 
