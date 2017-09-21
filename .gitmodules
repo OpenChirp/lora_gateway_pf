@@ -4,5 +4,5 @@
 	branch = master
 [submodule "packet_forwarder"]
 	path = packet_forwarder
-	url = https://github.com/Lora-net/packet_forwarder
+	url = git@github.com:ABalanuta/packet_forwarder.git
 	branch = master
